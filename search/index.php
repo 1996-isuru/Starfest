@@ -1,0 +1,13 @@
+<html>
+<head>
+  <script text="text/javascript" src="livesearch.js"></script>
+</head>
+<body>
+<form>
+<input type="text" size="30" onkeyup="showResult(this.value)">
+<div id="livesearch"></div>
+</form>
+
+</body>
+</html>
+ 

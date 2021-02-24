@@ -27,19 +27,15 @@
                 <img src="Starfest.png" width="200" alt="Starfest Inc logo">
             </div>
             <div class="profile-nav-info">
-                <h3 class="user-name">Starfest Inc</h3>
-                <div class="address">
-                    <p class="state">London,</p>
-                    <span class="country">United Kingdom</span>
-                </div>
+               
                 <div class="spName">
                 <?php
-                echo ("Global Events");
+                // echo ("Global Events");
 
                 if(isset($_GET["id"])){
 
                     $spid = $_GET["id"];
-                    echo $spid;
+
 
                     $dbhost = 'localhost';
                     $dbuser = 'root';
@@ -54,6 +50,9 @@
 
                     $sql = "SELECT firstname FROM service_provider WHERE sp_id=$spid";
                     $result = $connection->query($sql);
+
+                    $row = $result->fetch_assoc();
+                    echo "<a>".$row["firstname"]."</a>";
 
 
 

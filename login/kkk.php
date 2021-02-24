@@ -55,6 +55,7 @@ require_once('connection.php'); ?>
                            }
                            if($user_type == 'eo'){
                                 header('Location: eo/index.php');
+                                // header('Location: paypage/payment.php');
                            }
                            if($user_type == 'ep'){
                                 header('Location: ep/index.php');
